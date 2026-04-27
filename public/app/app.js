@@ -952,11 +952,11 @@ function openEditModal(sheetType, dataEnc) {
           <option value="Selesai" ${d['Status'] === 'Selesai' ? 'selected' : ''}>Selesai</option>
         </select>
       </div>`;
-
-
-    c.innerHTML = html;
-    document.getElementById('edit-modal').style.display = 'flex';
   }
+
+  c.innerHTML = html;
+  document.getElementById('edit-modal').style.display = 'flex';
+}
 
   async function submitEditData() {
     if (!currentEditData) return;
